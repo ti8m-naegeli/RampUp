@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { QuestionService } from "../../services/question.service";
-import { map, Observable } from "rxjs";
+import { map } from "rxjs";
 import { AsyncPipe } from "@angular/common";
 import { Question } from "../../model/Question";
 import { GameService } from "../../services/game.service";
+import { Router } from "@angular/router";
 
 export type SelectedTopic = {
   topic: string,
@@ -27,7 +28,7 @@ export class TestConfigurationComponent {
 
   selectedQuestions = 5;
 
-  constructor(private questionService: QuestionService, private gameService: GameService) {
+  constructor(private questionService: QuestionService, private gameService: GameService, private router: Router) {
     questionService.topics.pipe(map(topics => topics.map(t => ({ topic: t, selected: false})))).subscribe(t => this.topics = t)
   }
 
@@ -46,7 +47,8 @@ export class TestConfigurationComponent {
   }
 
   startGame(questions: Question[]) {
-    this.gameService.startGame(({questions: questions}))
+    this.gameService.startGame(questions)
+    this.router.navigate([ `game/1` ])
   }
 
 }

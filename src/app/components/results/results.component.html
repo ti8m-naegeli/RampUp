@@ -1,0 +1,24 @@
+@if (this.game)
+{
+
+  @for (answer of this.game.answers; track answer; let idx = $index)
+  {
+
+    <h2>({{ idx + 1 }} / {{ gameService.totalQuestions }}) {{ answer.question.title }}</h2>
+
+    {{ answer.question.description }}
+
+    <div class="options">
+
+      <ul>
+        @for (option of answer.question.options; track option; let idx = $index)
+        {
+          <li [class.correct]="isCorrect(answer, idx)" [class.wrong]="isWrong(answer, idx)">{{ option }}</li>
+        }
+      </ul>
+
+    </div>
+
+  }
+
+}

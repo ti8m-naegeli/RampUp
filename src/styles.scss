@@ -1,3 +1,5 @@
+@import "_variables.scss";
+
 body {
   background: #002650;
   color: #D8D8D8;
@@ -7,4 +9,12 @@ body {
 
 p {
   line-height: 1.8;
+}
+
+button {
+  font-size: 100%;
+  padding: 20px;
+  cursor: pointer;
+  background-color: $primary-color;
+  filter: drop-shadow(5px 5px 5px #303030);
 }

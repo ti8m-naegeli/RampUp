@@ -2,9 +2,12 @@
 
 ul {
   display: flex;
-  gap: 20px;
+  flex-direction: column;
   padding: 0;
   margin: 0;
+  gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 li {
@@ -17,8 +20,4 @@ li {
 
 .selected {
   background-color: $secondary-color;
-}
-
-.bottom-line {
-  margin-top: 30px;
 }

@@ -1,0 +1,27 @@
+
+@if (question) {
+
+  <h2>({{ currentQuestion }} / {{ gameService.totalQuestions }}) {{ question.title }}</h2>
+
+  {{ question.description }}
+
+  <div class="options">
+
+    <ul>
+      @for (option of question.options; track option; let idx = $index)
+      {
+        <li (click)="toggle(idx)" [class.selected]="isSelected(idx)">{{ option }}</li>
+      }
+    </ul>
+
+  </div>
+
+  <div class="buttons">
+
+    <button class="back" [disabled]="!gameService.canGoBack" (click)="back()">< Back</button>
+
+    <button class="Next" [disabled]="answers.length == 0" (click)="answer()">Next ></button>
+
+  </div>
+
+}
