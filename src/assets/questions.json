@@ -1,16 +1,590 @@
 [
   {
-    "title": "This is a question",
-    "description": "This is a description",
-    "topics": [
-      "Scrum"
-    ],
+    "title": "Clean Architecture:",
+    "description": "What are some common anti-patterns to avoid when implementing Clean Architecture?",
+    "topics": ["Clean Architecture"],
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "Favoring framework-specific code over business logic",
+      "Mixing concerns between layers",
+      "Relying heavily on external libraries",
+      "Ignoring the dependency rule"
     ],
-    "correctOptions": [ 2, 3 ]
+    "correctOptions": [1]
+  },
+  {
+    "title": "Clean Architecture:",
+    "description": "How does Clean Architecture facilitate testability and maintainability in software systems?",
+    "topics": ["Clean Architecture"],
+    "options": [
+      "By tightly coupling components",
+      "By separating concerns into layers",
+      "By using monolithic architectures",
+      "By avoiding the use of interfaces"
+    ],
+    "correctOptions": [1]
+  },
+  {
+    "title": "Clean Architecture:",
+    "description": "Explain the difference between Clean Architecture and traditional layered architectures.",
+    "topics": ["Clean Architecture"],
+    "options": [
+      "Clean Architecture focuses on separating concerns based on the technical stack, while traditional layered architectures focus on separating concerns based on functionality.",
+      "Clean Architecture allows for mixing business logic with framework-specific code, while traditional layered architectures strictly separate them.",
+      "Clean Architecture promotes tight coupling between components, while traditional layered architectures advocate loose coupling.",
+      "Clean Architecture encourages using a single monolithic layer for all components, while traditional layered architectures support multiple independent layers."
+    ],
+    "correctOptions": [0]
+  },
+  {
+    "title": "Clean Architecture:",
+    "description": "How can Clean Architecture support the implementation of microservices?",
+    "topics": ["Clean Architecture"],
+    "options": [
+      "By tightly coupling microservices with the underlying infrastructure",
+      "By allowing business logic to be shared across multiple microservices",
+      "By providing clear boundaries between components and allowing each microservice to have its own architecture",
+      "By minimizing the use of interfaces and abstractions"
+    ],
+    "correctOptions": [2]
+  },
+  {
+    "title": "Clean Architecture:",
+    "description": "Discuss the role of Dependency Injection in Clean Architecture and its benefits.",
+    "topics": ["Clean Architecture"],
+    "options": [
+      "Dependency Injection helps to tightly couple components in Clean Architecture.",
+      "Dependency Injection reduces testability and maintainability.",
+      "Dependency Injection promotes loose coupling between components by allowing dependencies to be injected from external sources.",
+      "Dependency Injection is not relevant in Clean Architecture."
+    ],
+    "correctOptions": [2]
+  },
+  {
+    "title": "Quarkus:",
+    "description": "What are the main features of Quarkus that differentiate it from other Java frameworks?",
+    "topics": ["Quarkus"],
+    "options": [
+      "High memory footprint and slow startup time",
+      "Compatibility with traditional Java EE specifications",
+      "Native compilation with GraalVM, rapid startup time, and low memory consumption",
+      "Heavy reliance on external libraries"
+    ],
+    "correctOptions": [2]
+  },
+  {
+    "title": "Quarkus:",
+    "description": "How does Quarkus achieve superior startup time and reduced memory footprint compared to traditional Java frameworks?",
+    "topics": ["Quarkus"],
+    "options": [
+      "By increasing the use of reflection and runtime bytecode generation",
+      "By optimizing code generation and minimizing runtime dependencies",
+      "By supporting only interpreted mode without compilation",
+      "By using heavyweight containers for deployment"
+    ],
+    "correctOptions": [1]
+  },
+  {
+    "title": "Quarkus:",
+    "description": "Discuss the concept of GraalVM native images and its relevance to Quarkus applications.",
+    "topics": ["Quarkus"],
+    "options": [
+      "GraalVM native images are not relevant to Quarkus applications",
+      "GraalVM native images are used for debugging Quarkus applications",
+      "GraalVM native images enable Quarkus applications to be compiled ahead of time into native executables, resulting in faster startup time and lower memory usage",
+      "GraalVM native images are used for running Quarkus applications in interpreted mode"
+    ],
+    "correctOptions": [2]
+  },
+  {
+    "title": "Quarkus:",
+    "description": "What are some common extensions available in Quarkus and how do they enhance developer productivity?",
+    "topics": ["Quarkus"],
+    "options": [
+      "Hibernate and Spring Boot, which simplify database access",
+      "Apache Kafka and MongoDB, which simplify integration with external systems",
+      "SmallRye and RESTEasy, which provide additional functionalities such as OpenAPI documentation and RESTful web services",
+      "JUnit and Mockito, which support testing functionalities"
+    ],
+    "correctOptions": [2]
+  },
+  {
+    "title": "Quarkus:",
+    "description": "Explain how Quarkus handles traditional Java EE specifications and what benefits it brings.",
+    "topics": ["Quarkus"],
+    "options": [
+      "Quarkus does not support traditional Java EE specifications",
+      "Quarkus provides compatibility with traditional Java EE specifications, allowing developers to migrate existing applications easily",
+      "Quarkus replaces traditional Java EE specifications with its proprietary alternatives",
+      "Quarkus ignores traditional Java EE specifications altogether"
+    ],
+    "correctOptions": [1]
+  },
+  {
+    "title": "Scrum:",
+    "description": "What is the purpose of the Scrum framework in software development?",
+    "topics": ["Scrum"],
+    "options": [
+      "To define a strict set of rules for software development projects",
+      "To provide a flexible and iterative approach to software development",
+      "To focus solely on technical aspects of software development",
+      "To eliminate the need for project management"
+    ],
+    "correctOptions": [1]
+  },
+  {
+    "title": "Scrum:",
+    "description": "Discuss the role of the Product Owner in the Scrum framework.",
+    "topics": ["Scrum"],
+    "options": [
+      "To manage the development team and allocate tasks",
+      "To represent the stakeholders and prioritize the product backlog",
+      "To develop the product and write code",
+      "To facilitate the Scrum events and ensure adherence to the Scrum framework"
+    ],
+    "correctOptions": [1]
+  },
+  {
+    "title": "Scrum:",
+    "description": "What are the main Scrum events, and how do they contribute to the development process?",
+    "topics": ["Scrum"],
+    "options": [
+      "Daily stand-up, sprint planning, product backlog refinement, and retrospective",
+      "Requirements gathering, design, coding, testing, and deployment",
+      "Project initiation, project execution, monitoring and control, and project closure",
+      "Sprint review, sprint retrospective, and sprint planning"
+    ],
+    "correctOptions": [0]
+  },
+  {
+    "title": "Scrum:",
+    "description": "Explain the concept of the Scrum Master and their responsibilities within a Scrum team.",
+    "topics": ["Scrum"],
+    "options": [
+      "The Scrum Master is responsible for managing the development team and ensuring the delivery of high-quality products",
+      "The Scrum Master is responsible for defining the product vision and prioritizing the product backlog",
+      "The Scrum Master is responsible for facilitating the Scrum events, removing impediments, and coaching the team on Scrum practices",
+      "The Scrum Master is responsible for writing code and developing the product"
+    ],
+    "correctOptions": [2]
+  },
+  {
+    "title": "Scrum:",
+    "description": "What is the purpose of the sprint retrospective in Scrum, and how does it benefit the team?",
+    "topics": ["Scrum"],
+    "options": [
+      "To plan the work that will be performed in the upcoming sprint",
+      "To review and demonstrate the completed work to stakeholders",
+      "To reflect on the previous sprint, identify improvements, and make adjustments to the team's process",
+      "To define the product vision and prioritize the product backlog"
+    ],
+    "correctOptions": [2]
+  },
+  {
+    "title": "Event Driven Architecture:",
+    "description": "Explain the key characteristics of Event Driven Architecture (EDA) and how it differs from traditional request-response architectures.",
+    "topics": ["Event Driven Architecture"],
+    "options": [
+      "EDA relies on asynchronous communication between components, while traditional architectures rely on synchronous request-response interactions",
+      "EDA does not support message queuing or event streaming",
+      "EDA promotes tight coupling between components, while traditional architectures promote loose coupling",
+      "EDA does not use events as a means of communication between components"
+    ],
+    "correctOptions": [0]
+  },
+  {
+    "title": "Event Driven Architecture:",
+    "description": "Discuss the advantages and challenges of implementing Event Driven Architecture in large-scale systems.",
+    "topics": ["Event Driven Architecture"],
+    "options": [
+      "Advantages: Scalability, loose coupling, real-time processing. Challenges: Event ordering, message loss, and complexity",
+      "Advantages: Tight coupling, simplicity, low latency. Challenges: Limited scalability, synchronous communication, and high overhead",
+      "Advantages: Centralized control, ease of debugging, simplicity. Challenges: Limited flexibility, tight coupling, and low fault tolerance",
+      "Advantages: High throughput, simplicity, ease of implementation. Challenges: Limited scalability, high latency, and difficulty in maintaining state"
+    ],
+    "correctOptions": [0]
+  },
+  {
+    "title": "Event Driven Architecture:",
+    "description": "What role does event sourcing play in Event Driven Architecture, and how does it contribute to system design?",
+    "topics": ["Event Driven Architecture"],
+    "options": [
+      "Event sourcing is not relevant to Event Driven Architecture",
+      "Event sourcing is used to manage database transactions in Event Driven Architecture",
+      "Event sourcing involves capturing changes to application state as a sequence of events, which enables reconstructing state at any point in time",
+      "Event sourcing is used for asynchronous communication between components in Event Driven Architecture"
+    ],
+    "correctOptions": [2]
+  },
+  {
+    "title": "Event Driven Architecture:",
+    "description": "Explain the concept of event-driven microservices and their benefits.",
+    "topics": ["Event Driven Architecture"],
+    "options": [
+      "Event-driven microservices communicate synchronously via HTTP requests, enabling tight coupling between components",
+      "Event-driven microservices communicate asynchronously via events, allowing for loose coupling, scalability, and fault tolerance",
+      "Event-driven microservices use traditional message queuing systems for communication, leading to high latency and tight coupling",
+      "Event-driven microservices do not communicate with each other"
+    ],
+    "correctOptions": [1]
+  },
+  {
+    "title": "Event Driven Architecture:",
+    "description": "Discuss the role of Apache Kafka in implementing Event Driven Architecture.",
+    "topics": ["Event Driven Architecture", "Apache Kafka"],
+    "options": [
+      "Apache Kafka is not relevant to Event Driven Architecture",
+      "Apache Kafka is a traditional message queuing system used for synchronous communication between components",
+      "Apache Kafka is an event streaming platform that facilitates asynchronous communication between components, enabling scalable and fault-tolerant event-driven architectures",
+      "Apache Kafka is a relational database management system used for storing events in Event Driven Architecture"
+    ],
+    "correctOptions": [2]
+  },
+  {
+    "title": "Domain Driven Design:",
+    "description": "What is the purpose of Domain Driven Design (DDD) in software development?",
+    "topics": ["Domain Driven Design"],
+    "options": [
+      "To optimize code execution",
+      "To separate business logic from presentation",
+      "To align software design with the problem domain",
+      "To eliminate the need for project management"
+    ],
+    "correctOptions": [2]
+  },
+  {
+    "title": "Domain Driven Design:",
+    "description": "Discuss the concept of bounded contexts in Domain Driven Design (DDD) and their significance.",
+    "topics": ["Domain Driven Design"],
+    "options": [
+      "Bounded contexts define the scope within which a particular model is defined and applicable, enabling teams to work independently on different parts of the system",
+      "Bounded contexts promote tight coupling between components, leading to increased complexity",
+      "Bounded contexts are irrelevant in Domain Driven Design",
+      "Bounded contexts allow developers to mix business logic with presentation"
+    ],
+    "correctOptions": [0]
+  },
+  {
+    "title": "Domain Driven Design:",
+    "description": "Explain the concept of aggregates in Domain Driven Design (DDD) and their role in maintaining consistency.",
+    "topics": ["Domain Driven Design"],
+    "options": [
+      "Aggregates are irrelevant in Domain Driven Design",
+      "Aggregates represent clusters of related objects treated as a single unit, helping to maintain consistency and enforce business rules",
+      "Aggregates promote tight coupling between components, leading to increased complexity",
+      "Aggregates are used for managing database transactions in Domain Driven Design"
+    ],
+    "correctOptions": [1]
+  },
+  {
+    "title": "Domain Driven Design:",
+    "description": "Discuss the significance of the ubiquitous language in Domain Driven Design (DDD) and how it contributes to better communication.",
+    "topics": ["Domain Driven Design"],
+    "options": [
+      "The ubiquitous language is not relevant in Domain Driven Design",
+      "The ubiquitous language allows developers to use technical jargon, making communication more difficult",
+      "The ubiquitous language promotes the use of a common vocabulary shared between technical and non-technical team members, enhancing communication and understanding",
+      "The ubiquitous language is used for defining database schemas"
+    ],
+    "correctOptions": [2]
+  },
+  {
+    "title": "Domain Driven Design:",
+    "description": "Explain the purpose of a domain event in Domain Driven Design (DDD) and how it enables loose coupling.",
+    "topics": ["Domain Driven Design"],
+    "options": [
+      "Domain events are irrelevant in Domain Driven Design",
+      "Domain events represent an occurrence of interest within the problem domain, enabling loose coupling between components by decoupling the source of the event from its consumers",
+      "Domain events are used for synchronous communication between components",
+      "Domain events promote tight coupling between components"
+    ],
+    "correctOptions": [1]
+  },
+  {
+    "title": "Clean Code Developer:",
+    "description": "What are the core principles of the Clean Code Developer approach, and how do they contribute to better software quality?",
+    "topics": ["Clean Code Developer"],
+    "options": [
+      "Test-driven development, continuous integration, and continuous delivery",
+      "Separation of concerns, loose coupling, and high cohesion",
+      "Refactoring, code review, and pair programming",
+      "SOLID principles, DRY (Don't Repeat Yourself), KISS (Keep It Simple, Stupid)"
+    ],
+    "correctOptions": [3]
+  },
+  {
+    "title": "Clean Code Developer:",
+    "description": "Discuss the concept of SOLID principles in the context of Clean Code Developer and their significance in software design.",
+    "topics": ["Clean Code Developer"],
+    "options": [
+      "SOLID principles promote tightly coupled code, leading to increased complexity",
+      "SOLID principles are irrelevant in Clean Code Developer",
+      "SOLID principles provide guidelines for writing maintainable, flexible, and scalable code by emphasizing single responsibility, open-closed principle, Liskov substitution principle, interface segregation, and dependency inversion",
+      "SOLID principles encourage duplication of code"
+    ],
+    "correctOptions": [2]
+  },
+  {
+    "title": "Clean Code Developer:",
+    "description": "Explain the concept of DRY (Don't Repeat Yourself) in Clean Code Developer and how it contributes to code maintainability.",
+    "topics": ["Clean Code Developer"],
+    "options": [
+      "DRY (Don't Repeat Yourself) is irrelevant in Clean Code Developer",
+      "DRY (Don't Repeat Yourself) promotes duplication of code, leading to increased maintenance effort",
+      "DRY (Don't Repeat Yourself) emphasizes the importance of code reuse and reducing redundancy, which improves code maintainability and reduces the risk of errors",
+      "DRY (Don't Repeat Yourself) discourages code reuse and encourages redundancy"
+    ],
+    "correctOptions": [2]
+  },
+  {
+    "title": "Clean Code Developer:",
+    "description": "Discuss the importance of code review in Clean Code Developer and how it helps improve code quality.",
+    "topics": ["Clean Code Developer"],
+    "options": [
+      "Code review is irrelevant in Clean Code Developer",
+      "Code review promotes isolation of developers and discourages collaboration",
+      "Code review helps identify issues, improve code readability, maintainability, and adherence to coding standards, and facilitates knowledge sharing and learning among team members",
+      "Code review encourages developers to work in silos"
+    ],
+    "correctOptions": [2]
+  },
+  {
+    "title": "Hexagon Architecture:",
+    "description": "What is Hexagon Architecture, and how does it differ from traditional layered architectures?",
+    "topics": ["Hexagon Architecture"],
+    "options": [
+      "Hexagon Architecture is not relevant",
+      "Hexagon Architecture promotes tightly coupled layers",
+      "Hexagon Architecture is an architectural pattern that emphasizes loose coupling and modularity by arranging components in hexagonal shape, with the core business logic at the center and adapters for input/output",
+      "Hexagon Architecture relies on traditional layered architectures"
+    ],
+    "correctOptions": [2]
+  },
+  {
+    "title": "Hexagon Architecture:",
+    "description": "Explain the concept of ports and adapters in Hexagon Architecture and how they contribute to flexibility and extensibility.",
+    "topics": ["Hexagon Architecture"],
+    "options": [
+      "Ports and adapters are irrelevant in Hexagon Architecture",
+      "Ports and adapters promote tight coupling between components",
+      "Ports represent interfaces through which the application interacts with external systems, while adapters convert external system interfaces into internal interfaces, enabling flexibility and extensibility",
+      "Ports and adapters are used for synchronous communication between components"
+    ],
+    "correctOptions": [2]
+  },
+  {
+    "title": "Hexagon Architecture:",
+    "description": "Discuss the advantages of using Hexagon Architecture in software development.",
+    "topics": ["Hexagon Architecture"],
+    "options": [
+      "Advantages: Tight coupling, low flexibility, and scalability. Challenges: High complexity, difficulty in maintenance",
+      "Advantages: Loose coupling, high flexibility, and modularity. Challenges: Learning curve, initial setup overhead",
+      "Advantages: Centralized control, ease of debugging, simplicity. Challenges: Limited flexibility, tight coupling, and low fault tolerance",
+      "Advantages: High throughput, simplicity, ease of implementation. Challenges: Limited scalability, high latency, and difficulty in maintaining state"
+    ],
+    "correctOptions": [1]
+  },
+  {
+    "title": "Hexagon Architecture:",
+    "description": "What role does the core domain model play in Hexagon Architecture, and how does it contribute to system design?",
+    "topics": ["Hexagon Architecture"],
+    "options": [
+      "The core domain model is irrelevant in Hexagon Architecture",
+      "The core domain model represents the entire system, including business logic and presentation layers",
+      "The core domain model encapsulates the core business logic of the application and is independent of external concerns, contributing to better separation of concerns and maintainability",
+      "The core domain model is used for handling database transactions"
+    ],
+    "correctOptions": [2]
+  },
+  {
+    "title": "Angular:",
+    "description": "What is Angular, and what are its key features?",
+    "topics": ["Angular"],
+    "options": [
+      "Angular is a back-end framework for building web applications",
+      "Angular is irrelevant in software development",
+      "Angular is a front-end framework for building web applications, known for its declarative templates, dependency injection, modular structure, and two-way data binding",
+      "Angular is a programming language"
+    ],
+    "correctOptions": [2]
+  },
+  {
+    "title": "Angular:",
+    "description": "Discuss the differences between Angular and AngularJS.",
+    "topics": ["Angular"],
+    "options": [
+      "Angular and AngularJS are the same",
+      "Angular is a JavaScript framework, while AngularJS is a TypeScript framework",
+      "Angular is the latest version of AngularJS, with improved performance and features",
+      "Angular is irrelevant"
+    ],
+    "correctOptions": [2]
+  },
+  {
+    "title": "Angular:",
+    "description": "Explain the concept of components in Angular and their role in building web applications.",
+    "topics": ["Angular"],
+    "options": [
+      "Components are irrelevant in Angular",
+      "Components represent modules in Angular",
+      "Components encapsulate the user interface and logic for a specific part of the application, facilitating code reuse, modularity, and maintainability",
+      "Components are used for database transactions"
+    ],
+    "correctOptions": [2]
+  },
+  {
+    "title": "Angular:",
+    "description": "What is dependency injection in Angular, and how does it contribute to code maintainability and testability?",
+    "topics": ["Angular"],
+    "options": [
+      "Dependency injection is irrelevant in Angular",
+      "Dependency injection promotes tight coupling between components",
+      "Dependency injection allows components to define their dependencies externally, enabling better code maintainability, testability, and reusability",
+      "Dependency injection is used for asynchronous communication between components"
+    ],
+    "correctOptions": [2]
+  },
+  {
+    "title": "Apache Kafka:",
+    "description": "What is Apache Kafka, and how does it facilitate event-driven architectures?",
+    "topics": ["Apache Kafka"],
+    "options": [
+      "Apache Kafka is irrelevant in event-driven architectures",
+      "Apache Kafka is a traditional message queuing system",
+      "Apache Kafka is an event streaming platform that enables the building of scalable, fault-tolerant, and real-time event-driven architectures by providing high-throughput, low-latency messaging",
+      "Apache Kafka is a relational database management system"
+    ],
+    "correctOptions": [2]
+  },
+  {
+    "title": "Apache Kafka:",
+    "description": "Discuss the key components of Apache Kafka and their roles in the event streaming platform.",
+    "topics": ["Apache Kafka"],
+    "options": [
+      "Key components: Producer, consumer, and broker. Roles: Producer sends messages to topics, consumer reads messages from topics, broker manages message storage and distribution",
+      "Key components: Router, transformer, and loader. Roles: Router routes messages to destinations, transformer modifies message contents, loader stores messages in databases",
+      "Key components: Front-end, back-end, and database. Roles: Front-end handles user interactions, back-end processes business logic, database stores data",
+      "Key components: Controller, service, and repository. Roles: Controller handles HTTP requests, service executes business logic, repository interacts with the database"
+    ],
+    "correctOptions": [0]
+  },
+  {
+    "title": "Apache Kafka:",
+    "description": "Explain the concept of topics in Apache Kafka and how they facilitate message organization and distribution.",
+    "topics": ["Apache Kafka"],
+    "options": [
+      "Topics are irrelevant in Apache Kafka",
+      "Topics are used for database transactions",
+      "Topics represent message queues in Apache Kafka, enabling the organization and distribution of messages among producers and consumers",
+      "Topics are used for synchronous communication between components"
+    ],
+    "correctOptions": [2]
+  },
+  {
+    "title": "Apache Kafka:",
+    "description": "Discuss the advantages of using Apache Kafka for building event-driven architectures.",
+    "topics": ["Apache Kafka"],
+    "options": [
+      "Advantages: Tight coupling, low scalability, and high latency. Challenges: Limited fault tolerance, high complexity",
+      "Advantages: Loose coupling, high scalability, and low latency. Challenges: Learning curve, initial setup overhead",
+      "Advantages: Centralized control, ease of debugging, simplicity. Challenges: Limited flexibility, tight coupling, and low fault tolerance",
+      "Advantages: High throughput, simplicity, ease of implementation. Challenges: Limited scalability, high latency, and difficulty in maintaining state"
+    ],
+    "correctOptions": [1]
+  },
+  {
+    "title": "MongoDB:",
+    "description": "What is MongoDB, and what are its key features?",
+    "topics": ["MongoDB"],
+    "options": [
+      "MongoDB is a relational database management system",
+      "MongoDB is irrelevant in software development",
+      "MongoDB is a NoSQL document-oriented database known for its flexibility, scalability, high performance, and ease of use",
+      "MongoDB is a programming language"
+    ],
+    "correctOptions": [2]
+  },
+  {
+    "title": "MongoDB:",
+    "description": "Discuss the differences between MongoDB and traditional relational databases.",
+    "topics": ["MongoDB"],
+    "options": [
+      "MongoDB and relational databases are the same",
+      "MongoDB is a relational database, while traditional relational databases are NoSQL databases",
+      "MongoDB stores data in tables with predefined schemas, while traditional relational databases store data in flexible, schema-less documents",
+      "MongoDB is irrelevant"
+    ],
+    "correctOptions": [2]
+  },
+  {
+    "title": "MongoDB:",
+    "description": "Explain the concept of collections and documents in MongoDB and how they differ from tables and rows in traditional relational databases.",
+    "topics": ["MongoDB"],
+    "options": [
+      "Collections and documents are irrelevant in MongoDB",
+      "Collections and documents represent data storage units in MongoDB, with documents being schema-less JSON-like objects stored in collections, while tables and rows represent structured data stored in relational databases",
+      "Collections and documents are used for synchronous communication between components",
+      "Collections and documents represent tables and rows in traditional relational databases"
+    ],
+    "correctOptions": [1]
+  },
+  {
+    "title": "MongoDB:",
+    "description": "What is the purpose of the MongoDB query language, and how does it facilitate data retrieval and manipulation?",
+    "topics": ["MongoDB"],
+    "options": [
+      "The MongoDB query language is irrelevant",
+      "The MongoDB query language is used for asynchronous communication between components",
+      "The MongoDB query language allows developers to interact with MongoDB databases by querying and manipulating data using a rich set of operators and expressions",
+      "The MongoDB query language promotes tight coupling between components"
+    ],
+    "correctOptions": [2]
+  },
+  {
+    "title": "OpenShift:",
+    "description": "What is OpenShift, and what are its key features?",
+    "topics": ["OpenShift"],
+    "options": [
+      "OpenShift is irrelevant in software development",
+      "OpenShift is a cloud computing platform as a service (PaaS) developed by Microsoft",
+      "OpenShift is a container application platform that enables developers to build, deploy, and manage containerized applications at scale, with features such as automated scaling, self-service provisioning, and integrated monitoring",
+      "OpenShift is a programming language"
+    ],
+    "correctOptions": [2]
+  },
+  {
+    "title": "OpenShift:",
+    "description": "Discuss the differences between OpenShift and other container orchestration platforms.",
+    "topics": ["OpenShift"],
+    "options": [
+      "OpenShift and other container orchestration platforms are the same",
+      "OpenShift is a traditional virtualization platform",
+      "OpenShift is a Kubernetes-based container orchestration platform with additional features such as built-in security, developer tools, and enterprise support",
+      "OpenShift is irrelevant"
+    ],
+    "correctOptions": [2]
+  },
+  {
+    "title": "OpenShift:",
+    "description": "Explain the concept of containerization in the context of OpenShift and how it facilitates application deployment and management.",
+    "topics": ["OpenShift"],
+    "options": [
+      "Containerization is irrelevant in OpenShift",
+      "Containerization promotes tight coupling between components",
+      "Containerization involves packaging applications and their dependencies into lightweight, portable containers, which can be easily deployed, scaled, and managed across different environments using OpenShift",
+      "Containerization is used for asynchronous communication between components"
+    ],
+    "correctOptions": [2]
+  },
+  {
+    "title": "OpenShift:",
+    "description": "What role does Kubernetes play in OpenShift, and how does it contribute to container orchestration?",
+    "topics": ["OpenShift"],
+    "options": [
+      "Kubernetes is irrelevant in OpenShift",
+      "Kubernetes is a traditional virtualization platform",
+      "Kubernetes is a core component of OpenShift, providing container orchestration capabilities such as automated deployment, scaling, and management of containerized applications",
+      "Kubernetes promotes tight coupling between components"
+    ],
+    "correctOptions": [2]
   }
 ]

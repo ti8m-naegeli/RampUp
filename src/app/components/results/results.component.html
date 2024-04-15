@@ -13,7 +13,7 @@
       <ul>
         @for (option of answer.question.options; track option; let idx = $index)
         {
-          <li [class.correct]="isCorrect(answer, idx)" [class.wrong]="isWrong(answer, idx)">{{ option }}</li>
+          <li [class.correct]="isCorrect(answer, idx)" [class.correct-but-not-selected]="isCorrectButNotSelected(answer, idx)" [class.incorrect-but-selected]="isIncorrectButSelected(answer, idx)">{{ option }}</li>
         }
       </ul>
 
@@ -22,3 +22,5 @@
   }
 
 }
+
+<button (click)="again()">Nochmal spielen</button>

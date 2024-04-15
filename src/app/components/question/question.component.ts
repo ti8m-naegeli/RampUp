@@ -25,13 +25,16 @@ export class QuestionComponent implements OnInit {
   ngOnInit() {
     let number = this.route.snapshot.paramMap.get("question")
 
-
     if (number != null) {
       let question = parseInt(number)
-
-      this.currentQuestion = question;
-      this.question = this.gameService.select(question)
+      this.selectQuestion(question)
     }
+  }
+
+  selectQuestion(question: number) {
+    this.currentQuestion = question;
+    this.question = this.gameService.select(question)
+    this.answers = []
   }
 
   toggle(index: number) {
@@ -51,8 +54,9 @@ export class QuestionComponent implements OnInit {
     let nextQuestion = this.gameService.answer(this.answers)
 
     if (nextQuestion != null) {
-      this.router.navigate([`game/${nextQuestion}`])
-
+      this.router.navigate([`game/${nextQuestion}`]).then(
+        () => this.selectQuestion(nextQuestion)
+      )
     } else {
       this.router.navigate([`results`])
     }

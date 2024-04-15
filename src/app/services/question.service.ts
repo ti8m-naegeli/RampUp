@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Question } from "../model/Question";
 import { HttpClient } from '@angular/common/http'
-import { BehaviorSubject, filter, map } from 'rxjs';
+import { BehaviorSubject, map } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -16,7 +16,7 @@ export class QuestionService {
   }
 
   get topics() {
-    return this.questions$.pipe(map(qs => qs.flatMap(q => q.topics)));
+    return this.questions$.pipe(map(qs => qs.flatMap(q => q.topics).filter((value, index, array) => array.indexOf(value) === index).sort()));
   }
 
   getQuestions(count: number, topics: string[]) {
