@@ -1,0 +1,29 @@
+<p>
+  Willkommen bei Ramp Up, einer Quiz-App für das Testen und
+  für den Aufbau von Wissen rund um relevante Technologien
+  und Vorgehensmodelle.
+</p>
+
+<p>
+  Bitte wähle die Themen, die du testen möchtest:
+</p>
+
+<ul>
+  @for (t of topics; track t) {
+    <li (click)="toggleSelection(t)" [class.selected]="t.selected">{{ t.topic }}</li>
+  }
+</ul>
+
+<p>
+  Bitte wähle die gewünschte Anzahl an Fragen:
+</p>
+
+<ul>
+  @for (n of availableQuestions; track n) {
+    <li (click)="selectedQuestions = n" [class.selected]="n == selectedQuestions">{{ n }}</li>
+  }
+</ul>
+
+<div class="bottom-line">
+  <button (click)="play()">Spielen</button>
+</div>
