@@ -1,11 +1,14 @@
 import { Component } from '@angular/core';
 import {Answer, Game, GameService} from "../../services/game.service";
 import {Router} from "@angular/router";
+import {AngularGradientProgressbarModule} from "angular-gradient-progressbar";
 
 @Component({
   selector: 'app-results',
   standalone: true,
-  imports: [],
+  imports: [
+    AngularGradientProgressbarModule
+  ],
   templateUrl: './results.component.html',
   styleUrl: './results.component.scss'
 })
@@ -40,6 +43,14 @@ export class ResultsComponent {
 
   again() {
     this.router.navigate([ "" ])
+  }
+
+  calculateResult() {
+    if (this.game != null) {
+
+    }
+
+    return null;
   }
 
 }

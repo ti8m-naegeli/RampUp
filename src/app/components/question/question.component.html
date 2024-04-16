@@ -1,7 +1,7 @@
 
 @if (question) {
 
-  <h2>({{ currentQuestion }} / {{ gameService.totalQuestions }}) {{ question.title }}</h2>
+  <h2>#{{ currentQuestion }} {{ question.title }}</h2>
 
   <div class="options">
 
@@ -18,7 +18,7 @@
 
     <button class="back" (click)="back()">< Back</button>
 
-    <button class="Next" (click)="answer()">Next ></button>
+    <button class="Next" (click)="answer()" [disabled]="answers.length == 0">Next ></button>
 
   </div>
 

@@ -55,6 +55,20 @@ export class GameService {
     return this.currentGame;
   }
 
+  get result() {
+    if (this.currentGame != null) {
+      let sum = 0
+
+      this.currentGame.answers.forEach(a => {
+        sum += a.selection.some(c => a.question.correctOptions.indexOf(c) > -1) ? 1 : 0;
+      })
+
+      return (sum / this.totalQuestions) * 100;
+    }
+
+    return 0
+  }
+
   answer(choice: number[]) {
     let question = this.selected
 

@@ -1,10 +1,12 @@
 @if (this.game)
 {
 
+  <angular-gradient-progressbar [type]="1" [value]="gameService.result"></angular-gradient-progressbar>
+
   @for (answer of this.game.answers; track answer; let idx = $index)
   {
 
-    <h2>({{ idx + 1 }} / {{ gameService.totalQuestions }}) {{ answer.question.title }}</h2>
+    <h2>#{{ idx + 1 }} {{ answer.question.title }}</h2>
 
     <div class="options">
 
