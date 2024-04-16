@@ -1,27 +1,27 @@
-# RampUp
+# my-skills.dev
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.3.
+This repository contains the source code of the [my-skills.dev](https://my-skills.dev) website,
+a German web app to test your skills regarding current technologies
+and methodologies used in modern software development.
 
-## Development server
+As the app has been created a couple of hours as a project to learn
+Angular, do not expect high quality code here.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Contributing
 
-## Code scaffolding
+We welcome any kind of contribution via GitHub pull requests.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Adding Questions
 
-## Build
+If you would like to add questions to the website, feel free to fork this repo
+and create a PR which includes your new questions within the [questions.json](./src/assets/questions.json) file.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Development
 
-## Running unit tests
+To run the project locally, clone this repo and run
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```
+ng serve --open
+```
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+After installing the pre-requisites required by [Angular](https://angular.io/).
