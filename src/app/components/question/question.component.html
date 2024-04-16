@@ -3,8 +3,6 @@
 
   <h2>({{ currentQuestion }} / {{ gameService.totalQuestions }}) {{ question.title }}</h2>
 
-  {{ question.description }}
-
   <div class="options">
 
     <ul>
@@ -18,9 +16,9 @@
 
   <div class="buttons">
 
-    <button class="back" [disabled]="!gameService.canGoBack" (click)="back()">< Back</button>
+    <button class="back" (click)="back()">< Back</button>
 
-    <button class="Next" [disabled]="answers.length == 0" (click)="answer()">Next ></button>
+    <button class="Next" (click)="answer()">Next ></button>
 
   </div>
 

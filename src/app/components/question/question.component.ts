@@ -64,7 +64,15 @@ export class QuestionComponent implements OnInit {
 
   back() {
     let index = (this.currentQuestion ?? 0) - 1
-    this.router.navigate([`game/${index}`])
+
+    if (index >= 1) {
+      this.router.navigate([`game/${index}`]).then(
+        () => this.selectQuestion(index)
+      )
+    }
+    else {
+      this.router.navigate([ '/' ])
+    }
   }
 
 }
