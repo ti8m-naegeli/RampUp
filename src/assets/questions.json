@@ -217,5 +217,71 @@
       "Das Erzeugen von Events beim Ändern von Entities ist verboten"
     ],
     "correctOptions": [0,1]
+  },
+  {
+    "title": "Wie werden Daten in Kafka persistiert?",
+    "topics": ["Kafka"],
+    "options": [
+      "In einer relationalen Datenbank, beispielsweise Postgres",
+      "In spezialisierten Systemen wie Apache Hadoop",
+      "In S3-Buckets die per Konfiguration angegeben werden",
+      "In einer fortlaufend geschriebenen Log-Datei"
+    ],
+    "correctOptions": [3]
+  },
+  {
+    "title": "In welchem Format speichert Kafka Daten?",
+    "topics": ["Kafka"],
+    "options": [
+      "Binär",
+      "JSON",
+      "Avro",
+      "Protobuf",
+      "XML",
+      "gRPC"
+    ],
+    "correctOptions": [0]
+  },
+  {
+    "title": "Wieso ist Kafka so schnell?",
+    "topics": ["Kafka"],
+    "options": [
+      "Kafka setzt konsequent auf asynchrone Entwicklung",
+      "Das Lesen von Events entspricht einem sequentiellen Lesen der Log-Datei",
+      "Kritische Sektionen sind in Assembler entwickelt"
+    ],
+    "correctOptions": [1]
+  },
+  {
+    "title": "Welche Rolle spielen Broker in Kafka?",
+    "topics": ["Kafka"],
+    "options": [
+      "Sie koordinieren die Zugriffe auf die zentrale Datenbank",
+      "Sie merken sich die Position der Konsumenten in den Logs",
+      "Sie speichern die Schemata der in den Topics gespeicherten Daten",
+      "Sie replizieren die Topics untereinander und erlauben Konsumenten den Zugriff"
+    ],
+    "correctOptions": [1,3]
+  },
+  {
+    "title": "Wie können unterschiedliche Konsumenten von Kafka-Events jeweils die selben Nachrichten eines Topics erhalten, ohne dass sie sich gegenseitig beeinflussen?",
+    "topics": ["Kafka"],
+    "options": [
+      "Man dupliziert das Topic mit Hilfe von Kafka Streams",
+      "Die Konsumenten merken sich selbst die letzte Nachricht, die sie selbst gelesen haben",
+      "Durch die Verwendung von Consumer Groups"
+    ],
+    "correctOptions": [2]
+  },
+  {
+    "title": "Wie wird Asynchronität von REST-Endpunkten in Quarkus erreicht?",
+    "topics": ["Quarkus"],
+    "options": [
+      "Durch Verwendung von Mutiny",
+      "Durch Verwendung von Kotlin Co-Routines",
+      "Durch Verwendung von Websockets",
+      "Durch Verwendung von Reactive Entities mit Panache"
+    ],
+    "correctOptions": [0,1,3]
   }
 ]
