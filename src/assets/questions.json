@@ -1,7 +1,7 @@
 [
   {
     "title": "Welche Aussagen von Clean Code Developer zu Wandelbarkeit in Softwaresystemen treffen zu?",
-    "topics": ["Clean Code Developer"],
+    "topics": ["Clean Code Developer", "Architektur"],
     "options": [
       "Je länger eine Software besteht, desto teurer sind Änderungen an ihr - grundsätzlich",
       "Wenn die Kosten für Änderungen explodieren, lässt sich dies problemlos in den Griff bekommen",
@@ -75,5 +75,147 @@
       "`exec` `bundle` `examine`"
     ],
     "correctOptions": [2]
+  },
+  {
+    "title": "Ein größeres Feature in eurem Scrum-Team steht an - wie schneidet ihr?",
+    "topics": ["Scrum"],
+    "options": [
+      "Erst die Datenbank, dann das Backend, ganz am Ende das Frontend",
+      "Frontend und Backend werden in zwei unterschiedlichen Teams entwickelt",
+      "Wir erreichen gemeinsam einen Durchstich in einer Story und fügen mit weiteren Stories mehr Funktionen hinzu"
+    ],
+    "correctOptions": [2]
+  },
+  {
+    "title": "Welche der folgenden Rollen sind offiziell Teil des Scrum-Teams?",
+    "topics": ["Scrum"],
+    "options": [
+      "Developer",
+      "Business Analyst",
+      "Product Owner",
+      "Scrum Master",
+      "Stakeholder",
+      "Project Manager"
+    ],
+    "correctOptions": [0,2,3]
+  },
+  {
+    "title": "Auf was committen sich die Entwickler eines Scrum-Teams?",
+    "topics": ["Scrum"],
+    "options": [
+      "Die Produktvision",
+      "Die Roadmap",
+      "Die Stories im Sprint",
+      "Das Sprint-Ziel",
+      "Die Definition of Read (DoR)",
+      "Die Definition of Done (DoD)"
+    ],
+    "correctOptions": [0,3,5]
+  },
+  {
+    "title": "Darf ein Sprint abgebrochen werden, wenn das Ziel nicht mehr zweckmäßig ist?",
+    "topics": ["Scrum"],
+    "options": [
+      "Ja, da in dem Fall kein sinnvolles Increment geliefert werden kann",
+      "Nein, die Kadenz muss gewahrt bleiben da sonst zuviel Chaos verursacht wird"
+    ],
+    "correctOptions": [0]
+  },
+  {
+    "title": "Soll Scrum den Bedarf an anderen Meetings verringern?",
+    "topics": ["Scrum"],
+    "options": [
+      "Ja",
+      "Nein"
+    ],
+    "correctOptions": [0]
+  },
+  {
+    "title": "Welche Aussagen zum Review in Scrum treffen zu?",
+    "topics": ["Scrum"],
+    "options": [
+      "Es handelt sich um ein Präsentationsmeeting, Fragen sollten immer ausgelagert werden",
+      "Das Review ist ein Arbeitsmeeting, bei dem das Team die Inkremente vorstellt und Feedback für die weitere Entwicklung einholt",
+      "Entwickler zeigen, was sie entwickelt haben, ein 'zu technisch' gibt es nicht",
+      "Das Review bedarf keiner Vorbereitung durch das Team"
+    ],
+    "correctOptions": [1]
+  },
+  {
+    "title": "Welche Aussagen zur Retrospektive in Scrum treffen zu?",
+    "topics": ["Scrum"],
+    "options": [
+      "Das Meeting sollte nicht länger als eine Stunde dauern",
+      "Die Retro sollte einer sichere Umgebung sein, in der Misstände offen angesprochen werden können",
+      "Wenn Manager an der Retro teilnehmen möchten, können sie dies gerne jederzeit tun",
+      "Für die wichtigsten Punkte werden Aktionen abgeleitet, die so früh wie möglich angegangen werden"
+    ],
+    "correctOptions": [1,3]
+  },
+  {
+    "title": "Im Planning soll der nächste Sprint befüllt werden. Was stimmt?",
+    "topics": ["Scrum"],
+    "options": [
+      "Der Product Owner selektiert die Stories vor, die bearbeitet werden sollen",
+      "Die Roadmap entscheidet den Inhalt des Sprints",
+      "Der Product Owner stellt vor, welchen Mehrwert er gerne mit dem nächsten Sprint erreichen möchte",
+      "Die Entwickler wählen die Stories, die im Sprint bearbeitet werden sollen"
+    ],
+    "correctOptions": [2,3]
+  },
+  {
+    "title": "Was ist der Nutzen von asynchroner Programmierung im Backend?",
+    "topics": ["Backend", "Architektur"],
+    "options": [
+      "Es können mehr Requests parallel ausgeführt werden",
+      "Einzelne Requests werden beschleunigt ausgeführt",
+      "Requests, die auf Ressourcen warten, können andere nicht mehr blockieren",
+      "Funktionen sind einfacher zu entwickeln"
+    ],
+    "correctOptions": [0,2]
+  },
+  {
+    "title": "Welche Ziele verfolgt Clean Architecture?",
+    "topics": ["Architektur"],
+    "options": [
+      "Unabhängigkeit der Business-Logik von UI, Datenbanktechnologie und Frameworks im Allgemeinen",
+      "Verbesserte Testbarkeit durch Isolierung der Business-Logik",
+      "Verbesserte Planbarkeit durch inkrementelle Entwicklung",
+      "Eine saubere Domäne durch lose Koppelung der Business-Logik"
+    ],
+    "correctOptions": [0,1]
+  },
+  {
+    "title": "Was ist das wesentliche Element von Clean Architecture?",
+    "topics": ["Architektur"],
+    "options": [
+      "Ein Sechseck mit verschiedenen Schichten, wobei die innere Schicht nichts von den äußeren weiß",
+      "Ein Kreisdiagramm, bei dem der Output des letzten Schritts wieder in den ersten mündet",
+      "Ein Kreis mit verschiedenen Schichten, wobei die innere Schicht nichts von den äußeren weiß",
+      "Eine Pyramide, die nach oben hin immer fachlicher wird"
+    ],
+    "correctOptions": [2]
+  },
+  {
+    "title": "Wie unterscheidet sich Clean Architecture vom Onion-Modell?",
+    "topics": ["Architektur"],
+    "options": [
+      "Das Onion-Modell trennt zwischen Application- und Domain-Services, bei Clean Architecture wird lediglich abstrakt zwischen Use-Cases und Entities getrennt",
+      "Clean Architecture ist der Vorgänger des Onion-Modells",
+      "Das Onion-Modell sieht die Datenbank als zentrales Element in der Mitte, Clean Architecture abstrahiert diese Abhängigkeit",
+      "Clean Architecture ist ein Meta-Model, welches durch das Onion-Modell implementiert werden könnte"
+    ],
+    "correctOptions": [0,3]
+  },
+  {
+    "title": "Was besagt die Dependency Rule in Clean Architecture?",
+    "topics": ["Architektur"],
+    "options": [
+      "Ein Element der äußeren Schichten darf keinen Einfluss auf ein Element der inneren Schichten haben",
+      "Die Interaktion mit äußeren Schichten erfolgt immer über Kontrakte / Interfaces",
+      "Anwendungen sollten stets einen Dependency Injection Container verwenden",
+      "Das Erzeugen von Events beim Ändern von Entities ist verboten"
+    ],
+    "correctOptions": [0,1]
   }
 ]
