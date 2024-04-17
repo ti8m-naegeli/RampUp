@@ -25,5 +25,5 @@
 </ul>
 
 <div class="bottom-line">
-  <button (click)="play()">Spielen</button>
+  <button (click)="play()" [disabled]="!topicsSelected">Spielen</button>
 </div>

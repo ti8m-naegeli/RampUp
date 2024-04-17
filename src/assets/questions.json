@@ -53,5 +53,27 @@
       "`time$` darf nur einmalig in der Komponente zugewiesen und auf keinen Fall geändert werden"
     ],
     "correctOptions": [0]
+  },
+  {
+    "title": "Wie unterscheiden sich Karma und Jasmine?",
+    "topics": ["Angular", "Frontend", "Testing"],
+    "options": [
+      "Gar nicht, beide sind Test-Frameworks",
+      "Karma führt Tests aus, Jasmine beschreibt Tests",
+      "Jasmine führt Tests aus, Karma beschreibt Tests",
+      "Karma wird für React genutzt, Jasmine für Angular"
+    ],
+    "correctOptions": [1]
+  },
+  {
+    "title": "Welche Kommandos werden zur Entwicklung einer Angular-App typischerweise genutzt?",
+    "topics": ["Angular", "Frontend"],
+    "options": [
+      "`run` `deploy` `verify`",
+      "`start` `pack` `asses`",
+      "`serve` `build` `test`",
+      "`exec` `bundle` `examine`"
+    ],
+    "correctOptions": [2]
   }
 ]

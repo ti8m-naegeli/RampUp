@@ -51,4 +51,12 @@ export class TestConfigurationComponent {
     this.router.navigate([ `game/1` ])
   }
 
+  get topicsSelected() {
+    if (this.topics != null) {
+      return this.topics.some(t => t.selected)
+    }
+
+    return false
+  }
+
 }
