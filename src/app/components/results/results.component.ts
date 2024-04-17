@@ -2,12 +2,14 @@ import { Component } from '@angular/core';
 import {Answer, Game, GameService} from "../../services/game.service";
 import {Router} from "@angular/router";
 import {AngularGradientProgressbarModule} from "angular-gradient-progressbar";
+import {MarkdownComponent} from "ngx-markdown";
 
 @Component({
   selector: 'app-results',
   standalone: true,
   imports: [
-    AngularGradientProgressbarModule
+    AngularGradientProgressbarModule,
+    MarkdownComponent
   ],
   templateUrl: './results.component.html',
   styleUrl: './results.component.scss'

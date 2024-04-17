@@ -1,20 +1,24 @@
 @import "_variables.scss";
 
+.box {
+  width: 900px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
 .main {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 800px;
-  margin: 0 auto;
-  margin-top: 50px;
-  padding: 50px;
   background-color: #575757;
   border-radius: 20px;
+  margin-top: 50px;
+  padding: 50px;
   filter: drop-shadow(10px 10px 20px #303030);
 }
 
 @media screen and (max-width: 950px) {
-  .main {
+  .box {
     width: auto;
     margin-left: 10px;
     margin-right: 10px;
@@ -29,4 +33,15 @@
 
 .content {
 
+}
+
+.footer {
+  margin-top: 30px;
+  display: flex;
+  justify-content: right;
+}
+
+.icon {
+  color: $primary-color;
+  margin-left: 10px;
 }

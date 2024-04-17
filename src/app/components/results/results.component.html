@@ -1,19 +1,21 @@
 @if (this.game)
 {
 
-  <angular-gradient-progressbar [type]="1" [value]="gameService.result"></angular-gradient-progressbar>
+  <angular-gradient-progressbar [type]="1" [barCount]="10" [value]="gameService.result"></angular-gradient-progressbar>
 
   @for (answer of this.game.answers; track answer; let idx = $index)
   {
 
-    <h2>#{{ idx + 1 }} {{ answer.question.title }}</h2>
+    <h2><markdown>#{{ idx + 1 }} {{ answer.question.title }}</markdown></h2>
 
     <div class="options">
 
       <ul>
         @for (option of answer.question.options; track option; let idx = $index)
         {
-          <li [class.correct]="isCorrect(answer, idx)" [class.correct-but-not-selected]="isCorrectButNotSelected(answer, idx)" [class.incorrect-but-selected]="isIncorrectButSelected(answer, idx)">{{ option }}</li>
+          <li [class.correct]="isCorrect(answer, idx)" [class.correct-but-not-selected]="isCorrectButNotSelected(answer, idx)" [class.incorrect-but-selected]="isIncorrectButSelected(answer, idx)">
+            <markdown>{{ option }}</markdown>
+          </li>
         }
       </ul>
 

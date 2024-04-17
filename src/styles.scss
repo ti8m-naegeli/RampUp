@@ -11,10 +11,25 @@ p {
   line-height: 1.8;
 }
 
+markdown > p {
+  margin: 0;
+}
+
 button {
   font-size: 100%;
   padding: 20px;
   cursor: pointer;
   background-color: $primary-color;
   filter: drop-shadow(5px 5px 5px #303030);
+}
+
+$a-tags: 'a, a:active, a:hover, a:visited';
+$a-tags-hover: 'a:active, a:hover';
+
+#{$a-tags} {
+  color: $primary-color;
+  text-decoration: none;
+}
+#{$a-tags-hover} {
+  color: #D8D8D8;
 }
