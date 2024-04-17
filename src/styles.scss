@@ -33,3 +33,7 @@ $a-tags-hover: 'a:active, a:hover';
 #{$a-tags-hover} {
   color: #D8D8D8;
 }
+
+h1, h2 p {
+  display: inline;
+}

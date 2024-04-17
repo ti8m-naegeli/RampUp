@@ -37,7 +37,7 @@ export class QuestionComponent implements OnInit {
   selectQuestion(question: number) {
     this.currentQuestion = question;
     this.question = this.gameService.select(question)
-    this.answers = []
+    this.answers = [];
   }
 
   toggle(index: number) {

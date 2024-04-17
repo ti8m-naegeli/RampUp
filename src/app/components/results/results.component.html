@@ -13,8 +13,18 @@
       <ul>
         @for (option of answer.question.options; track option; let idx = $index)
         {
-          <li [class.correct]="isCorrect(answer, idx)" [class.correct-but-not-selected]="isCorrectButNotSelected(answer, idx)" [class.incorrect-but-selected]="isIncorrectButSelected(answer, idx)">
-            <markdown>{{ option }}</markdown>
+          <li>
+
+            <div class="evaluation">
+
+              <div class="status" [class.correct]="isCorrect(answer, idx)" [class.correct-but-not-selected]="isCorrectButNotSelected(answer, idx)" [class.incorrect-but-selected]="isIncorrectButSelected(answer, idx)"></div>
+
+              <div class="answer">
+                <markdown>{{ option }}</markdown>
+              </div>
+
+            </div>
+
           </li>
         }
       </ul>

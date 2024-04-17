@@ -1,3 +1,7 @@
+.options {
+  margin-bottom: 40px;
+}
+
 ul {
   display: flex;
   flex-direction: column;
@@ -11,9 +15,21 @@ ul {
 li {
   display: block;
   margin: 0;
-  padding: 15px;
   background-color: #252525;
   filter: drop-shadow(5px 5px 5px #303030);
+}
+
+.evaluation {
+  display: flex;
+}
+
+.answer {
+  padding: 15px;
+}
+
+.status {
+  background-color: #383838;
+  width: 30px;
 }
 
 .correct {
