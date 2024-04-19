@@ -267,7 +267,7 @@
     "title": "Wie können unterschiedliche Konsumenten von Kafka-Events jeweils die selben Nachrichten eines Topics erhalten, ohne dass sie sich gegenseitig beeinflussen?",
     "topics": ["Kafka"],
     "options": [
-      "Man dupliziert das Topic mit Hilfe von Kafka Streams",
+      "Durch Duplikation des Topics mit Hilfe von Kafka Streams",
       "Die Konsumenten merken sich selbst die letzte Nachricht, die sie selbst gelesen haben",
       "Durch die Verwendung von Consumer Groups"
     ],
@@ -283,5 +283,120 @@
       "Durch Verwendung von Reactive Entities mit Panache"
     ],
     "correctOptions": [0,1,3]
+  },
+  {
+    "title": "Welch Elemente sind Teil von SOLID?",
+    "topics": ["Architektur", "Clean Code Developer"],
+    "options": [
+      "Speration of Concerns (SoC)",
+      "Single Responsibility Principle (SRP)",
+      "Open Closed Principle (OCP)",
+      "Object Oriented Programming (OOP)",
+      "Liskov Substitution Principle (LSP)",
+      "Law of Demeter (LoD)",
+      "Interface Segregation Principle (ISP)",
+      "Information Hiding Priciple (IHP)",
+      "Don't Repeat Yourself (DRY)",
+      "Dependency Inversion Principle (DIP)"
+    ],
+    "correctOptions": [1, 2, 4, 6, 9]
+  },
+  {
+    "title": "Welche Aussagen zu Seperation of Concerns (SoC) treffen zu?",
+    "topics": ["Architektur", "Clean Code Developer"],
+    "options": [
+      "SoC verbessert die Testbarkeit",
+      "Eine Klasse darf nur genau einen Concern haben",
+      "Concerns sollten innerhalb einer Klasse gruppiert und gekennzeichnet werden",
+      "SoC führt zu loser Kopplung und hoher Kohäsion"
+    ],
+    "correctOptions": [0, 2, 3]
+  },
+  {
+    "title": "Welche Aussagen zum Single Responsibility Principle (SRP) treffen zu?",
+    "topics": ["Architektur", "Clean Code Developer"],
+    "options": [
+      "Zusammengehörige Business-Logik sollt immer in einer einzigen Klasse implementiert werden",
+      "Je mehr Klassen geändert werden müssen, desto höher das Risiko für Probleme",
+      "Eine Klasse sollte nur eine Verantwortlichkeit haben",
+      "Eine Teildomäne in DDD sollte immer aus einer einzigen Entity bestehen"
+    ],
+    "correctOptions": [1, 2]
+  },
+  {
+    "title": "Welche Aussagen zum Open Closed Principle (OCP) treffen zu?",
+    "topics": ["Architektur", "Clean Code Developer"],
+    "options": [
+      "Vaterklassen sollten offen (open) implementiert werden, abgeleitete Klassen geschützt (closed) werden",
+      "Eine Klasse sollte offen für Modifikationen, aber geschlossen für Erweiterungen sein",
+      "Der Einsatz des Strategy Patterns kann das OCP unterstützen",
+      "Eine Klasse sollte offen für Erweiterungen, aber geschlossen für Modifikationen sein"
+    ],
+    "correctOptions": [2, 3]
+  },
+  {
+    "title": "Welche Aussagen zum Liskov Substitution Principle (LSP) treffen zu?",
+    "topics": ["Architektur", "Clean Code Developer"],
+    "options": [
+      "Eine Kindklasse sollte keine Exception werfen, wenn die Vaterklasse dies nicht tut",
+      "Eine Kindklasse darf die Funktion der Vaterklasse erweitern, aber nicht einschränken",
+      "Es sollten nie mehr als zwei Vererbungsstufen verwendet werden",
+      "Eine Kindklasse darf die Funktion der Vaterklasse einschränken, aber nicht erweitern"
+    ],
+    "correctOptions": [0, 1]
+  },
+  {
+    "title": "Welche Aussagen zum Law of Demeter (LoD) treffen zu?",
+    "topics": ["Architektur", "Clean Code Developer"],
+    "options": [
+      "Ein Zugriff auf `meinePrivateMethode().einGetter.methode()` ist okay",
+      "Ein Zugriff auf `einParameter.methode()` ist okay",
+      "Ein Zugriff auf `einParameter.einGetter.methode()` ist okay",
+      "Ein Zugriff auf `meinePrivateMethode()` ist okay"
+    ],
+    "correctOptions": [1, 3]
+  },
+  {
+    "title": "Welche Aussagen zum Interface Segregation Principle (ISP) treffen zu?",
+    "topics": ["Architektur", "Clean Code Developer"],
+    "options": [
+      "Ein Interface sollte immer nur einen einzigen Concern ausdrücken",
+      "Ein Interface sollte keine Details von möglichen Implementierungen enthalten",
+      "Ein Interface sollte nicht von anderen Interfaces abhängen",
+      "Ein Interface sollte so wenig wie nötig Definitionen enthalten"
+    ],
+    "correctOptions": [1, 3]
+  },
+  {
+    "title": "Welche Aussagen zum Information Hiding Priciple (IHP) treffen zu?",
+    "topics": ["Architektur", "Clean Code Developer"],
+    "options": [
+      "Je mehr Informationen eine Schnittstelle preisgibt, desto besser für das UI",
+      "Jede Schnittstelle sollte nur nötige Informationen nach außen geben",
+      "Nach außen freigegebene Informationen lassen sich später problemlos ändern"
+    ],
+    "correctOptions": [1]
+  },
+  {
+    "title": "Welche Aussagen zu Don't Repeat Yourself (DRY) treffen zu?",
+    "topics": ["Architektur", "Clean Code Developer"],
+    "options": [
+      "Copy & Paste von Code entspricht dem agilen Geist",
+      "Es ist häufig besser, Code zu duplizieren als weitere, abstrakte Strukturelemente hinzuzufügen",
+      "Refactorings können helfen, duplizierte Code-Stellen zu reduzieren",
+      "Code-Duplizierung sorgt für unwartbare Software"
+    ],
+    "correctOptions": [2, 3]
+  },
+  {
+    "title": "Welche Aussagen zum Dependency Inversion Principle (DIP) treffen zu?",
+    "topics": ["Architektur", "Clean Code Developer"],
+    "options": [
+      "Verwendet eine High-Level Klasse eine Low-Level Klasse unmittelbar, so ist diese schwerer zu testen",
+      "Das Injizieren von Abhängigkeiten per Konstruktor ist immer schlecht",
+      "High- und Low-Level-Klassen sollten optimalerweise über Interfaces entkoppelt sein",
+      "Abhängigkeiten sollten im besten Fall schon zur Compile-Zeit bekannt sein"
+    ],
+    "correctOptions": [0, 2]
   }
 ]
