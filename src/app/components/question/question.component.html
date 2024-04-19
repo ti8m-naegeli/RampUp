@@ -1,7 +1,7 @@
 
 @if (question) {
 
-  <h2>#{{ currentQuestion }} <markdown [data]="question.title"></markdown></h2>
+  <h2>#{{ currentQuestion }} <markdown [data]="question.title"></markdown> <app-external-link [source]="question.source"></app-external-link></h2>
 
   <div class="options">
 

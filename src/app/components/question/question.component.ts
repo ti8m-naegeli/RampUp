@@ -3,12 +3,14 @@ import {GameService} from "../../services/game.service";
 import {ActivatedRoute, Router} from "@angular/router";
 import {Question} from "../../model/Question";
 import {MarkdownComponent} from "ngx-markdown";
+import {ExternalLinkComponent} from "../external-link/external-link.component";
 
 @Component({
   selector: 'app-question',
   standalone: true,
   imports: [
-    MarkdownComponent
+    MarkdownComponent,
+    ExternalLinkComponent
   ],
   templateUrl: './question.component.html',
   styleUrl: './question.component.scss'

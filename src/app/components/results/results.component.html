@@ -6,7 +6,7 @@
   @for (answer of this.game.answers; track answer; let idx = $index)
   {
 
-    <h2><markdown>#{{ idx + 1 }} {{ answer.question.title }}</markdown></h2>
+    <h2><markdown>#{{ idx + 1 }} {{ answer.question.title }}</markdown> <app-external-link [source]="answer.question.source"></app-external-link></h2>
 
     <div class="options">
 
